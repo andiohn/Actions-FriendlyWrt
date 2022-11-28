@@ -1,20 +1,22 @@
-# 使用 GitHub Actions 编译 FriendlyWrt
-[English](README_en.md)
-### 基本信息 
-- 用户名：root
-- 密码：password
-- 后台IP：192.168.2.1
-- 固件下载地址： https://github.com/friendlyarm/Actions-FriendlyWrt/releases
-- 更多使用说明: https://wiki.friendlyelec.com/wiki/index.php/Template:FriendlyWrt21/zh
-### 固件说明
-- 同一固件文件同时支持安装至SD和eMMC，不作区分
-### 如何将固件写入eMMC  
-- 先将固件写入一张SD卡，然后从SD启动系统，访问FriendyWrt后台页面，进入菜单“系统”->“eMMC刷机助手”，上传固件文件直接刷入即可，文件无需解压，写入完成后，将SD卡弹出, 设备会自动重启并从eMMC引导系统。
-### 更新说明
-- 2022/11/24 修正R6S 1G网口不可用问题, eMMC刷机工具现可以在eMMC启动时使用
-- 2022/11/01 增加R6S支持
-- 2022/10/09 首次发布
-### Thanks / 致谢
+# Build FriendlyWrt using GitHub Actions
+### General info 
+- User：root
+- Password：password
+- IP：192.168.2.1
+- Download： https://github.com/friendlyarm/Actions-FriendlyWrt/releases
+- Document: https://wiki.friendlyelec.com/wiki/index.php/Template:FriendlyWrt21/zh
+### About image file
+- The same image file supports installation to both SD and eMMC
+### How to write image to eMMC  
+- First write the image to an SD card, then boot the system from the SD card, visit the FriendyWrt admin page, go to the menu "System" -> "eMMC Tools", upload the image file and flash it in directly, no need to decompress the file, after the flashing is completed, eject the SD card, the device will automatically reboot and boot from the eMMC.
+### Changelog
+- 2022/11/24 Fix R6S 1G LAN port issue, eMMC-Tools can be run on eMMC
+- 2022/11/01 Add support for NanoPi-R6S
+- 2022/10/09 Initial commit
+### For more information
+Please first take a look at [our Wiki](https://wiki.friendlyelec.com) which covers the most basics.  
+Should you have any additional question, please send a mail to techsupport@friendlyarm.com, and we are willing to help.  
+### Acknowledgments
 - [luci-app-diskman](https://github.com/lisaac/luci-app-diskman)
 - [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)
 - [P3TERX](https://github.com/P3TERX/Actions-OpenWrt)
